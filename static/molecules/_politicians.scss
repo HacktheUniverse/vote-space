@@ -32,9 +32,10 @@
 				background-color: transparent;
 				transition: all .3s ease-in;
 				padding: .3em;
+				display: inline-block;
 				width: 0;
+				bottom: 0.9em;
 				position: relative;
-				bottom: -2.5em;
 				&:hover {
 					border-color: $white;
 					background-color: rgba($white, .3);

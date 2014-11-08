@@ -141,9 +141,10 @@ button {
         background-color: transparent;
         transition: all .3s ease-in;
         padding: .3em;
+        display: inline-block;
         width: 0;
-        position: relative;
-        bottom: -2.5em; }
+        bottom: 0.9em;
+        position: relative; }
         .decorative-div .frame li button:hover {
           border-color: #fff;
           background-color: rgba(255, 255, 255, 0.3); }
@@ -182,7 +183,8 @@ button {
   text-align: center;
   font-size: 3em; }
   .stripes-background h1 {
-    font-size: 1.4em; }
+    font-size: 1.4em;
+    padding: 1em 0; }
   .stripes-background .hero {
     overflow: hidden;
     padding: 0 1.5em; }
