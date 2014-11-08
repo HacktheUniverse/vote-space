@@ -29,15 +29,37 @@
 		margin: -2.5em .5em 0;
 		position: relative;
 		float: left;
-		h4 {
+		span {
+			color: $magenta;
 			position: absolute;
-			top: 0.3em;
+			bottom: 0;
+			right: 0;
+			padding: 0 0.2em;
+			background: rgba($white, .7);
+			&.blue {
+				color: rgb(78, 128, 146);
+			}
+		}
+		.name {
+			position: absolute;
+			top: 0.1em;
 			text-align: left;
 			left: 4.8em;
 			width: auto;
 			padding: .5em;
 			line-height: 1.1;
+			transition: .3s opacity ease-in;
 			opacity: 0.8;
+			text-decoration: none;
+			border: none;
+			background: none;
+			color: $white;
+			&:hover {
+				opacity: 1;
+				border: none;
+				background: none;
+				color: $white;
+			}
 		}
 
 		.portrait {

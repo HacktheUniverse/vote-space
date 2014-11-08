@@ -156,15 +156,34 @@ button {
     margin: -2.5em .5em 0;
     position: relative;
     float: left; }
-    .politician .frame h4 {
+    .politician .frame span {
+      color: #8b0035;
       position: absolute;
-      top: 0.3em;
+      bottom: 0;
+      right: 0;
+      padding: 0 0.2em;
+      background: rgba(255, 255, 255, 0.7); }
+      .politician .frame span.blue {
+        color: #4e8092; }
+    .politician .frame .name {
+      position: absolute;
+      top: 0.1em;
       text-align: left;
       left: 4.8em;
       width: auto;
       padding: .5em;
       line-height: 1.1;
-      opacity: 0.8; }
+      transition: .3s opacity ease-in;
+      opacity: 0.8;
+      text-decoration: none;
+      border: none;
+      background: none;
+      color: #fff; }
+      .politician .frame .name:hover {
+        opacity: 1;
+        border: none;
+        background: none;
+        color: #fff; }
     .politician .frame .portrait {
       height: 100%;
       width: 100%;
