@@ -140,20 +140,23 @@ button {
       background-size: cover;
       background-position: center;
       box-shadow: 0px 1px 0 5px #001F1B; }
-    .politician .frame button {
+    .politician .frame a {
       border-color: transparent;
       background-color: transparent;
       transition: all .3s ease-in;
       padding: 0.1em;
       display: inline-block;
-      margin: 0; }
-      .politician .frame button:hover {
-        border-color: #fff;
+      margin: 0.3em 0 0;
+      border-radius: 60px;
+      border: 2px solid transparent; }
+      .politician .frame a:hover {
+        border: 2px solid #fff;
         background-color: rgba(255, 255, 255, 0.3); }
-      .politician .frame button svg {
+      .politician .frame a svg {
         display: block;
-        width: 1em;
-        height: 1em;
+        width: 1.6em;
+        height: 1.6em;
+        margin: 4px;
         font-size: 0.4em; }
 
 .space-background {
