@@ -102,13 +102,17 @@ button {
   background-color: rgba(255, 255, 255, 0.2);
   margin-bottom: 3em;
   padding: 1em; }
-  .decorative-div .saturn-icon {
-    float: left;
-    height: 2em;
-    width: 2em; }
 
 .politician {
-  padding: 1em 2em; }
+  padding: 1em 2em;
+  position: relative; }
+  .politician .saturn {
+    float: left;
+    top: -1em;
+    position: relative; }
+    .politician .saturn .saturn-icon {
+      height: 2em;
+      width: 2em; }
   .politician .frame {
     height: 5em;
     width: 5em;
@@ -117,6 +121,15 @@ button {
     margin: -2.5em .5em 0;
     position: relative;
     float: left; }
+    .politician .frame h4 {
+      position: absolute;
+      top: 0.3em;
+      text-align: left;
+      left: 4.8em;
+      width: auto;
+      padding: .5em;
+      line-height: 1.1;
+      opacity: 0.8; }
     .politician .frame .portrait {
       height: 100%;
       width: 100%;
