@@ -43,7 +43,7 @@ button {
     background: rgba(0, 31, 27, 0.5); }
 
 .space-background {
-  height: 100%;
+  min-height: 100%;
   width: 100%;
   background: url(images/space.png) no-repeat center fixed;
   -webkit-background-size: cover;
@@ -52,7 +52,7 @@ button {
   background-size: cover; }
 
 .stripes-background {
-  height: 100%;
+  min-height: 100%;
   width: 100%;
   background: url(images/stripes.png) no-repeat center fixed;
   -webkit-background-size: cover;
@@ -131,6 +131,12 @@ button {
       margin: -2.5em .5em 0;
       position: relative;
       float: left; }
+      .decorative-div .frame li .portrait {
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        box-shadow: 0px 1px 0 5px #001F1B; }
       .decorative-div .frame li button {
         border-color: transparent;
         background-color: transparent;

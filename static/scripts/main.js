@@ -1,13 +1,14 @@
 $(function () {
-  $('#zip').on('click', fetchRepresentatives);
+  $('#search').on('click', fetchRepresentatives);
 
   function fetchRepresentatives(event) {
-    $.get('/get_reps/' + event.target.value, populateRepresentatives);
+  	var $val = $('#zip').val();
+    $.getJSON('/get_reps/' + $val, populateRepresentatives);
   }
 
   function populateRepresentatives(data) {
-    // TODO: populate reps
 	var $repTemplate = $('#representatives').html();
-	_.template($repTemplate, {representatives: data});
+	var repRender = _.template($repTemplate, {variable: 'representatives'})(data);
+	$('.view-two').append(repRender);
   }
 });
