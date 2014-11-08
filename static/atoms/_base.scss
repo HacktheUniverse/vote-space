@@ -1,25 +1,25 @@
 html, body {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
-    zoom: 1;
+	box-sizing: border-box;
+	font-family: Prisma;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	zoom: 1;
 }
 
 input {
-    padding: 1em;
-    border-radius: 50%;
-    width: 10em;
-    background-color: rgba($dark-green, .3);
-    border: 2px solid $dark-green;
+	padding: 1em;
+	border-radius: 50%;
+	width: 10em;
+	background-color: rgba($dark-green, .3);
+	border: 2px solid $dark-green;
 }
 
 h1, h2, h3, h4, h5 {
-	font-family: Prisma;
 	color: $white;
-	position: relative;
 	font-weight: normal;
+	margin-top: 0;
 }
 
 ul {
@@ -30,19 +30,17 @@ ul {
 
 button {
 	background: $dark-green;
-	border: none;
 	color: $white;
-	font-family: Prisma;
 	font-size: 2em;
-	padding: .5em;
-	border-radius: 40px;
-	width: 6em;
+	padding: 0.5em 1.5em;
+	border-radius: 2em;
 	outline: none;
-	cursor: pointer;
-	border: 2px solid transparent;
-	transition: .2s background ease-in;
+	border: 2px solid $dark-green;
+	transition: 0.2s background ease-in;
+	display: block;
+	margin: 1em auto;
+
 	&:hover {
-		background: rgba($dark-green, .5);
-		border: 2px solid $dark-green;
+		background: rgba($dark-green, 0.5);
 	}
 }

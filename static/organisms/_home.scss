@@ -1,21 +1,18 @@
 .space-background {
+	padding-top: 4em;
+	text-align: center;
+
 	.search-bar {
-		margin: 0 auto;
-		top: 5em;
+		display: inline-block;
 		position: relative;
-		text-align: center;
-		input {
-			display: inline-block;
-			vertical-align: middle;
-		}
-		& svg {
+
+		svg {
 			height: 3em;
 			width: 3em;
-			margin: 1em 0 1em 0;
-			vertical-align: middle;
-			text-align: right;
-			position: relative;
-			left: -4em;
+			position: absolute;
+			right: 1em;
+			top: 1em;
+			padding: 0.1em;
 		}
 		button {
 			margin: 1em auto;
@@ -26,6 +23,6 @@
 		text-align: center;
 		top: 1em;
 		font-size: 4.5em;
+		margin-bottom: 2em;
 	}
 }
-

@@ -4,6 +4,7 @@
   src: url("fonts/Prisma.ttf") format("truetype"); }
 html, body {
   box-sizing: border-box;
+  font-family: Prisma;
   margin: 0;
   padding: 0;
   height: 100%;
@@ -18,10 +19,9 @@ input {
   border: 2px solid #001F1B; }
 
 h1, h2, h3, h4, h5 {
-  font-family: Prisma;
   color: #fff;
-  position: relative;
-  font-weight: normal; }
+  font-weight: normal;
+  margin-top: 0; }
 
 ul {
   list-style: none;
@@ -30,25 +30,22 @@ ul {
 
 button {
   background: #001F1B;
-  border: none;
   color: #fff;
-  font-family: Prisma;
   font-size: 2em;
-  padding: .5em;
-  border-radius: 40px;
-  width: 6em;
+  padding: 0.5em 1.5em;
+  border-radius: 2em;
   outline: none;
-  cursor: pointer;
-  border: 2px solid transparent;
-  transition: .2s background ease-in; }
+  border: 2px solid #001F1B;
+  transition: 0.2s background ease-in;
+  display: block;
+  margin: 1em auto; }
   button:hover {
-    background: rgba(0, 31, 27, 0.5);
-    border: 2px solid #001F1B; }
+    background: rgba(0, 31, 27, 0.5); }
 
 .space-background {
   height: 100%;
   width: 100%;
-  background: url(images/space.png) no-repeat center center fixed;
+  background: url(images/space.png) no-repeat center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -57,23 +54,19 @@ button {
 .stripes-background {
   height: 100%;
   width: 100%;
-  background: url(images/stripes.png) no-repeat center center fixed;
+  background: url(images/stripes.png) no-repeat center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
 
 .space-background input {
-  padding: .5em 0;
-  border-radius: 60px;
-  width: 15em;
-  text-align: left;
+  padding: 0.5em 2.5em 0.5em 1em;
+  border-radius: 2em;
   outline: none;
-  padding-left: 1em;
   font-size: 2em;
   background-color: rgba(0, 31, 27, 0.3);
-  color: #fff;
-  font-family: Prisma; }
+  color: #fff; }
   .space-background input::-webkit-input-placeholder {
     color: #001F1B; }
   .space-background input:-moz-placeholder {
@@ -157,29 +150,27 @@ button {
           margin: -0.2em .1em;
           cursor: pointer; }
 
-.space-background .search-bar {
-  margin: 0 auto;
-  top: 5em;
-  position: relative;
+.space-background {
+  padding-top: 4em;
   text-align: center; }
-  .space-background .search-bar input {
+  .space-background .search-bar {
     display: inline-block;
-    vertical-align: middle; }
-  .space-background .search-bar svg {
-    height: 3em;
-    width: 3em;
-    margin: 1em 0 1em 0;
-    vertical-align: middle;
-    text-align: right;
-    position: relative;
-    left: -4em; }
-  .space-background .search-bar button {
-    margin: 1em auto;
-    display: block; }
-.space-background h1 {
-  text-align: center;
-  top: 1em;
-  font-size: 4.5em; }
+    position: relative; }
+    .space-background .search-bar svg {
+      height: 3em;
+      width: 3em;
+      position: absolute;
+      right: 1em;
+      top: 1em;
+      padding: 0.1em; }
+    .space-background .search-bar button {
+      margin: 1em auto;
+      display: block; }
+  .space-background h1 {
+    text-align: center;
+    top: 1em;
+    font-size: 4.5em;
+    margin-bottom: 2em; }
 
 .stripes-background {
   text-align: center;
