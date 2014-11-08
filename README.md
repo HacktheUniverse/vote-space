@@ -1,4 +1,4 @@
-# RepreSpaceStation
+# Vote Space
 
 This is a web application which finds your congressional representatives, and grades them based on their voting history with space related legislation.
 
