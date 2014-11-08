@@ -37,7 +37,7 @@ def get_reps(zip_code):
             if voter in representative_ids_list:
                 # name = value['voter']['first_name'] + ' ' + value['voter']['last_name']
                 if not voter in scores.keys():
-                    scores[voter] = value;
+                    scores[voter] = value['voter'];
                     scores[voter]['score'] = 0
                 if value['vote'] == "Nay":
                     scores[voter]['score'] -= 1
