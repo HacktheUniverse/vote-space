@@ -1,0 +1,18 @@
+.decorative-div {
+	height: 2em;
+	width: 100%;
+	background-color: rgba($white, .2);
+	margin-top: 3em;
+	.frame {
+		text-align: center;
+		margin: 0 auto;
+		display: inline-block;
+		li {
+			height: 5em;
+			width: 4em;
+			display: inline-block;
+			background: $white;
+			margin: -1.3em .3em 0;
+		}
+	}
+}

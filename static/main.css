@@ -21,6 +21,11 @@ h1, h2, h3, h4, h5 {
   position: relative;
   font-weight: normal; }
 
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
 button {
   background: #001F1B;
   border: none;
@@ -42,6 +47,15 @@ button {
   height: 100%;
   width: 100%;
   background: url(images/space.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+.stripes-background {
+  height: 100%;
+  width: 100%;
+  background: url(images/stripes.png) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -100,6 +114,22 @@ button {
   animation-iteration-count: infinite;
   -webkit-animation-iteration-count: infinite; }
 
+.decorative-div {
+  height: 2em;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-top: 3em; }
+  .decorative-div .frame {
+    text-align: center;
+    margin: 0 auto;
+    display: inline-block; }
+    .decorative-div .frame li {
+      height: 5em;
+      width: 4em;
+      display: inline-block;
+      background: #fff;
+      margin: -1.3em .3em 0; }
+
 .space-background .search-bar {
   margin: 0 auto;
   top: 5em;
@@ -123,5 +153,35 @@ button {
   text-align: center;
   top: 1em;
   font-size: 4.5em; }
+
+.stripes-background {
+  text-align: center;
+  font-size: 3em; }
+  .stripes-background h1 {
+    position: relative;
+    font-size: 1.4em; }
+  .stripes-background .hero {
+    overflow: hidden;
+    padding: 0 1.5em; }
+    .stripes-background .hero svg {
+      height: 1em;
+      width: 1em;
+      position: relative;
+      float: left; }
+      .stripes-background .hero svg:nth-child(1) {
+        transform: rotate(30deg);
+        height: .8em;
+        width: .8em;
+        float: right; }
+      .stripes-background .hero svg:nth-child(2) {
+        transform: rotate(-60deg);
+        height: 2em;
+        width: 2em;
+        float: left; }
+      .stripes-background .hero svg:nth-child(3) {
+        transform: rotate(-40deg);
+        height: 1.5em;
+        width: 1.5em;
+        float: right; }
 
 /*# sourceMappingURL=main.css.map */

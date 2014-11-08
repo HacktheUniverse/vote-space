@@ -1,0 +1,38 @@
+.stripes-background {
+	text-align: center;
+	font-size: 3em;
+	h1 {
+		position: relative;
+		font-size: 1.4em;
+	}
+	.hero {
+		overflow: hidden;
+		padding: 0 1.5em;
+		svg {
+			height: 1em;
+			width: 1em;
+			position: relative;
+			float: left;
+			&:nth-child(1) {
+				transform: rotate(30deg);
+				height: .8em;
+				width: .8em;
+				float: right;
+			}
+			&:nth-child(2) {
+				transform: rotate(-60deg);
+				height: 2em;
+				width: 2em;
+				float: left;
+			}
+			&:nth-child(3) {
+				transform: rotate(-40deg);
+				height: 1.5em;
+				width: 1.5em;
+				float: right;
+			}
+		}
+	}
+	
+}
+
