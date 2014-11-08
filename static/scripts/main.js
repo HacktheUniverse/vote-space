@@ -12,6 +12,6 @@ $(function () {
 
 	function populateRepresentatives(data) {
   	var repRender = _.template($('#representatives').html(), { variable: 'representatives' })(data);
-  	$('.view-two').append(repRender);
+  	$('.politicians').html(repRender);
 	}
 });

@@ -1,8 +1,16 @@
 // Fonts
 @font-face {
-    font-family: "Prisma";
-    src: url("fonts/Prisma.otf") format("opentype");
-    src: url("fonts/Prisma.ttf") format("truetype");
+		font-family: "Prisma";
+		src: url("fonts/Prisma.otf") format("opentype");
+		src: url("fonts/Prisma.ttf") format("truetype");
+}
+
+@mixin clearfix {
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
 }
 
 // Colors
