@@ -128,19 +128,23 @@ button {
     .ameranaut {
       display: block; } }
 
-.politicians {
-  margin-top: -2em; }
-  .politicians:after {
-    content: "";
-    display: table;
-    clear: both; }
-  .politicians .voters {
-    margin: -1em 0 1.5em;
-    display: inline-block;
-    padding: 0 .5em .5em;
-    color: #fff;
-    font-size: 0.8em;
-    text-align: center; }
+.politicians:after {
+  content: "";
+  display: table;
+  clear: both; }
+@media only screen and (min-width: 60em) {
+  .politicians {
+    margin-top: -2em; } }
+.politicians .voters {
+  margin: -1em 0 1.5em;
+  padding: 0 .5em .5em;
+  color: #fff;
+  font-size: 0.5em;
+  text-align: center; }
+  @media only screen and (min-width: 60em) {
+    .politicians .voters {
+      display: inline-block;
+      font-size: 0.8em; } }
 
 .decorative-div {
   background-color: rgba(255, 255, 255, 0.2);
@@ -174,13 +178,14 @@ button {
 .politician .saturn {
   float: left;
   margin-top: -1em;
-  margin-left: -0.8em; }
+  margin-left: -0.8em;
+  margin-right: 0.5em; }
   @media only screen and (min-width: 60em) {
     .politician .saturn {
       margin-left: 0; } }
   .politician .saturn .saturn-icon {
-    height: 3.4em;
-    width: 3.4em; }
+    height: 2em;
+    width: 2em; }
 .politician .frame {
   height: 1em;
   width: 1em;
@@ -192,8 +197,7 @@ button {
     .politician .frame {
       font-size: 5em;
       display: inline-block;
-      background: #fff;
-      margin: -2.5em .5em 0; } }
+      background: #fff; } }
   .politician .frame span {
     color: #8b0035;
     position: absolute;
@@ -202,9 +206,6 @@ button {
     padding: 0 0.2em;
     background: rgba(255, 255, 255, 0.7);
     font-size: 0.2em; }
-    @media only screen and (min-width: 60em) {
-      .politician .frame span {
-        font-size: 1em; } }
     .politician .frame span.blue {
       color: #4e8092; }
   .politician .frame .name {
@@ -236,7 +237,8 @@ button {
       display: none; }
       @media only screen and (min-width: 60em) {
         .politician .frame .portrait ~ a:not(.name) {
-          display: inline-block; } }
+          display: block;
+          float: left; } }
   .politician .frame a {
     border-color: transparent;
     background-color: transparent;
@@ -247,9 +249,6 @@ button {
     border-radius: 60px;
     border: 2px solid transparent;
     font-size: 0.2em; }
-    @media only screen and (min-width: 60em) {
-      .politician .frame a {
-        font-size: 1em; } }
     .politician .frame a:hover {
       border: 2px solid #fff;
       background-color: rgba(255, 255, 255, 0.3); }
