@@ -2,6 +2,14 @@
 	display: inline-block;
 	position: relative;
 
+	@media #{$small-screen} {
+		font-size: 2em;
+	}
+
+	@media #{$medium-screen} {
+		font-size: 1em;
+	}
+
 	svg {
 		height: 1em;
 		width: 1em;
@@ -10,11 +18,6 @@
 		right: 0.3em;
 		top: 0.3em;
 		padding: 0.1em;
-		display: none;
-
-		@media #{$small-screen} {
-			display: block;
-		}
 	}
 	& + button {
 		margin: 1em auto;
@@ -22,6 +25,10 @@
 		font-size: 1em;
 
 		@media #{$small-screen} {
+			font-size: 3em;
+		}
+
+		@media #{$medium-screen} {
 			font-size: 2em;
 		}
 	}
@@ -30,14 +37,10 @@
 		padding: 0.5em 2.5em 0.5em 1em;
 		border-radius: 2em;
 		outline: none;
-		font-size: 1em;
+		font-size: 2em;
 		background-color: rgba(0, 31, 27, 0.3);
 		color: $white;
 		text-align: center;
-
-		@media #{$small-screen} {
-			font-size: 2em;
-		}
 
 		&:focus {
 			@include placeholder(transparent);

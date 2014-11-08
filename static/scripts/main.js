@@ -7,6 +7,7 @@ $(function () {
   });
 
 	function fetchRepresentatives() {
+    $("html, body").animate({ scrollTop: $('.view-two').offset().top }, 1500);
 		$.getJSON('/get_reps/' + $('#zip').val(), populateRepresentatives);
 	}
 

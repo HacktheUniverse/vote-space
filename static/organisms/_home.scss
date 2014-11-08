@@ -30,7 +30,7 @@ $header-font-size: 6em;
 		line-height: 1;
 		max-width: 15em;
 
-		@media #{$medium-screen} {
+		@media #{$small-screen} {
 			font-size: $header-font-size;
 		}
 	}
