@@ -21,20 +21,21 @@ def get_reps(zip_code):
     all_votes_url = "https://congress.api.sunlightfoundation.com/votes?bill_id__in=" + bill_ids + "&fields=voters&vote_type=passage&apikey=a5871887a24348d1a40d969832721c91"
     all_votes = pluck("voters", requests.get(all_votes_url).json()['results'])
 
-    scores = {}
+    scores = dict(total=0, voters={})
     for vote in all_votes:
+        scores['total'] += 1
         for voter, value in vote.iteritems():
             if voter in representative_ids_list:
-                if not voter in scores.keys():
-                    scores[voter] = value['voter'];
-                    scores[voter]['score'] = 0
+                if not voter in scores['voters'].keys():
+                    scores['voters'][voter] = value['voter'];
+                    scores['voters'][voter]['score'] = 0
                 if value['vote'] == "Nay":
-                    scores[voter]['score'] -= 1
+                    scores['voters'][voter]['score'] -= 1
                 elif value['vote'] == "Yea":
-                    scores[voter]['score'] += 1
+                    scores['voters'][voter]['score'] += 1
 
     pprint.pprint(json.dumps(scores), width=1)
     return json.dumps(scores)
 
 if __name__ == '__main__':
-	app.run()
+	app.run(debug=True)

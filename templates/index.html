@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<title>Vote Space</title>
+		<meta name="description" content="A rating system for congressional representatives with regards to their voting record on space related legislation.">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
 		<link rel="stylesheet" type="text/css" href="static/vendor/normalize.css"/>
 		<link rel="stylesheet" type="text/css" href="static/main.css"/>
 	</head>
 	<body>
 		<div class="view-one space-background">
-
 			<h1>Do Your Representatives Vote Space?</h1>
 			<div class="search-bar">
-					<input type="search" id="zip" placeholder="Enter your zipcode"/>
-					<svg version="1.1"
-			 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-			 x="0px" y="0px" viewBox="0 0 49.4 50.4" enable-background="new 0 0 49.4 50.4"
-			 xml:space="preserve">
-				<circle fill="none" stroke="#001F1B" stroke-width="7" stroke-miterlimit="10" cx="28.2" cy="21.2" r="17.7"/>
-
-				<line fill="none" stroke="#001F1B" stroke-width="7" stroke-linecap="round" stroke-miterlimit="10" x1="15.9" y1="35" x2="3.5" y2="46.9"/>
-			</svg>
+				<input type="search" id="zip" placeholder="Enter your zipcode"/>
+				<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 49.4 50.4" enable-background="new 0 0 49.4 50.4" xml:space="preserve">
+					<circle fill="none" stroke="#001F1B" stroke-width="7" stroke-miterlimit="10" cx="28.2" cy="21.2" r="17.7"/>
+					<line fill="none" stroke="#001F1B" stroke-width="7" stroke-linecap="round" stroke-miterlimit="10" x1="15.9" y1="35" x2="3.5" y2="46.9"/>
+				</svg>
 			</div>
 			<button id="search">Search</button>
 			<div class="ameranaut"></div>
@@ -42,11 +42,13 @@
 			</div>
 			<div class="politicians"></div>
 		</div>
+
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 		<script src="static/scripts/underscore.js"></script>
 		<script src="static/scripts/main.js"></script>
+
 		<script type="text/html" id="representatives">
-			<% _.each(representatives, function(rep, biocode, list) { %>
+			<% _.each(voters, function(rep, biocode, list) { %>
 					<div class="decorative-div">
 						<div class="data-points">
 								<p class="data-point"><%= rep.term_start %> - <%= rep.term_end %></p>
@@ -92,5 +94,6 @@
 					</div>
 			<% }); %>
 		</script>
+
 	</body>
 </html>

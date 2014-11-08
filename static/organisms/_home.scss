@@ -1,4 +1,5 @@
 $header-font-size: 6em;
+$sub-header-font-size: 1.4em;
 
 .space-background, .stripes-background {
 	min-height: 100%;
@@ -32,6 +33,49 @@ $header-font-size: 6em;
 
 		@media #{$small-screen} {
 			font-size: $header-font-size;
+		}
+	}
+}
+
+.stripes-background {
+	text-align: center;
+	font-size: 3em;
+
+	h1 {
+		font-size: $sub-header-font-size / 2;
+		padding: 1em 0;
+
+		@media #{$small-screen} {
+			font-size: $sub-header-font-size;
+		}
+	}
+	.hero {
+		overflow: hidden;
+		padding: 0 1.5em;
+
+		svg {
+			height: 1em;
+			width: 1em;
+			float: left;
+
+			&:nth-child(1) {
+				transform: rotate(30deg);
+				height: 0.8em;
+				width: 0.8em;
+				float: right;
+			}
+			&:nth-child(2) {
+				transform: rotate(-60deg);
+				height: 2em;
+				width: 2em;
+				float: left;
+			}
+			&:nth-child(3) {
+				transform: rotate(-40deg);
+				height: 1.5em;
+				width: 1.5em;
+				float: right;
+			}
 		}
 	}
 }
