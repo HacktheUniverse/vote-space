@@ -111,11 +111,9 @@ button {
   -webkit-animation-iteration-count: infinite; }
 
 .decorative-div {
-  height: 2em;
   background-color: rgba(255, 255, 255, 0.2);
-  margin-top: 3em;
-  padding: 1em;
-  display: block; }
+  margin-bottom: 3em;
+  padding: 1em; }
   .decorative-div .saturn-icon {
     float: left;
     height: 2em;

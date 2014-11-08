@@ -1,9 +1,8 @@
 .decorative-div {
-	height: 2em;
 	background-color: rgba($white, .2);
-	margin-top: 3em;
+	margin-bottom: 3em;
 	padding: 1em;
-	display: block;
+
 	.saturn-icon {
 		float: left;
 		height: 2em;
@@ -40,7 +39,7 @@
 					border-color: $white;
 					background-color: rgba($white, .3);
 				}
-				svg { 
+				svg {
 					position: absolute;
 					left: 0;
 					height: 0.4em;
