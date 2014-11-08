@@ -1,4 +1,6 @@
 .space-background {
+	height: 100%;
+	width: 100%;
     background: url(images/space.png) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -7,6 +9,8 @@
 }
 
 .stripes-background {
+	height: 100%;
+	width: 100%;
     background: url(images/stripes.png) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
