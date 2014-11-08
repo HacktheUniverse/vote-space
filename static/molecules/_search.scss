@@ -6,6 +6,7 @@
 	font-size: 2em;
 	background-color: rgba(0, 31, 27, 0.3);
 	color: $white;
+	text-align: center;
 
 	&:focus {
 		@include placeholder(transparent);

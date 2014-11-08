@@ -48,7 +48,8 @@ button {
   outline: none;
   font-size: 2em;
   background-color: rgba(0, 31, 27, 0.3);
-  color: #fff; }
+  color: #fff;
+  text-align: center; }
   .space-background input::-webkit-input-placeholder {
     color: #001F1B; }
   .space-background input:-moz-placeholder {
@@ -153,7 +154,8 @@ button {
   background-attachment: fixed; }
 
 .stripes-background {
-  background-image: url(images/stripes.png); }
+  background-image: url(images/stripes.png);
+  box-shadow: 0 -5px 10px 0 #001F1B; }
 
 .space-background {
   background-image: url(images/space.png);
