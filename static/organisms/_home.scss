@@ -1,5 +1,25 @@
+$header-font-size: 6em;
+
+.space-background, .stripes-background {
+	min-height: 100%;
+	width: 100%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.stripes-background {
+	background-image: url(images/stripes.png);
+}
+
 .space-background {
+	background-image: url(images/space.png);
 	padding-top: 4em;
+	margin-bottom: -1 * $header-font-size;
 	text-align: center;
 
 	.search-bar {
@@ -20,7 +40,7 @@
 		}
 	}
 	h1 {
-		font-size: 6em;
+		font-size: $header-font-size;
 		margin: 0 auto 1em;
 		word-spacing: 7px;
 		line-height: 1;

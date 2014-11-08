@@ -1,4 +1,5 @@
 .space-background input {
+	@include placeholder($dark-green);
 	padding: 0.5em 2.5em 0.5em 1em;
 	border-radius: 2em;
 	outline: none;
@@ -6,14 +7,7 @@
 	background-color: rgba(0, 31, 27, 0.3);
 	color: $white;
 
-	&::-webkit-input-placeholder { color: $dark-green; }
-	&:-moz-placeholder { color: $dark-green; }
-	&::-moz-placeholder { color: $dark-green; }
-	&:-ms-input-placeholder { color: $dark-green; }
 	&:focus {
-		&::-webkit-input-placeholder { color: transparent; }
-		&:-moz-placeholder { color: transparent; }
-		&::-moz-placeholder { color: transparent; }
-		&:-ms-input-placeholder { color: transparent; }
+		@include placeholder(transparent);
 	}
 }

@@ -42,24 +42,6 @@ button {
   button:hover {
     background: rgba(0, 31, 27, 0.5); }
 
-.space-background {
-  height: 100%;
-  width: 100%;
-  background: url(images/space.png) no-repeat center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
-
-.stripes-background {
-  min-height: 100%;
-  width: 100%;
-  background: url(images/stripes.png) no-repeat center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
-
 .space-background input {
   padding: 0.5em 2.5em 0.5em 1em;
   border-radius: 2em;
@@ -159,8 +141,24 @@ button {
         margin: 4px;
         font-size: 0.4em; }
 
+.space-background, .stripes-background {
+  min-height: 100%;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed; }
+
+.stripes-background {
+  background-image: url(images/stripes.png); }
+
 .space-background {
+  background-image: url(images/space.png);
   padding-top: 4em;
+  margin-bottom: -6em;
   text-align: center; }
   .space-background .search-bar {
     display: inline-block;

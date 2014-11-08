@@ -13,6 +13,13 @@
 	}
 }
 
+@mixin placeholder($color) {
+	&::-webkit-input-placeholder { color: $color; }
+	&:-moz-placeholder { color: $color; }
+	&::-moz-placeholder { color: $color; }
+	&:-ms-input-placeholder { color: $color; }
+}
+
 // Colors
 $dark-green: #001F1B;
 $white: #fff;
