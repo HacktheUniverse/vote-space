@@ -144,11 +144,19 @@ button {
 
 .decorative-div {
   background-color: rgba(255, 255, 255, 0.2);
-  margin-bottom: 3em;
-  padding: 1em; }
+  margin-bottom: 2em;
+  padding: 1.2em; }
+  @media only screen and (min-width: 60em) {
+    .decorative-div {
+      padding: 1em;
+      margin-bottom: 3em; } }
   .decorative-div .data-points {
     float: right;
-    margin: -0.5em 0; }
+    margin: -0.5em 0;
+    display: none; }
+    @media only screen and (min-width: 60em) {
+      .decorative-div .data-points {
+        display: block; } }
     .decorative-div .data-points .data-point {
       font-size: 0.4em;
       color: white;
@@ -159,78 +167,98 @@ button {
       .decorative-div .data-points .data-point:nth-child(n+2) {
         clear: right; }
 
-.politician {
-  padding: 1em 2em;
+@media only screen and (min-width: 60em) {
+  .politician {
+    padding: 1em 2em;
+    position: relative; } }
+.politician .saturn {
+  float: left;
+  margin-top: -1em;
+  margin-left: -0.8em; }
+  @media only screen and (min-width: 60em) {
+    .politician .saturn {
+      margin-left: 0; } }
+  .politician .saturn .saturn-icon {
+    height: 3.4em;
+    width: 3.4em; }
+.politician .frame {
+  height: 1em;
+  width: 1em;
+  font-size: 3em;
+  float: left;
+  margin-top: -0.5em;
   position: relative; }
-  .politician .saturn {
-    float: left;
-    top: -1.7em;
-    width: 4em;
-    left: -1em;
-    position: relative; }
-    .politician .saturn .saturn-icon {
-      height: 3.4em;
-      width: 3.4em; }
-  .politician .frame {
-    height: 5em;
-    width: 5em;
-    display: inline-block;
-    background: #fff;
-    margin: -2.5em .5em 0;
-    position: relative;
-    float: left; }
-    .politician .frame span {
-      color: #8b0035;
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      padding: 0 0.2em;
-      background: rgba(255, 255, 255, 0.7); }
-      .politician .frame span.blue {
-        color: #4e8092; }
-    .politician .frame .name {
-      position: absolute;
-      top: 0.1em;
-      text-align: left;
-      left: 4.8em;
-      width: auto;
-      padding: .5em;
-      line-height: 1.1;
-      transition: .3s opacity ease-in;
-      opacity: 0.8;
-      text-decoration: none;
+  @media only screen and (min-width: 60em) {
+    .politician .frame {
+      font-size: 5em;
+      display: inline-block;
+      background: #fff;
+      margin: -2.5em .5em 0; } }
+  .politician .frame span {
+    color: #8b0035;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 0 0.2em;
+    background: rgba(255, 255, 255, 0.7);
+    font-size: 0.2em; }
+    @media only screen and (min-width: 60em) {
+      .politician .frame span {
+        font-size: 1em; } }
+    .politician .frame span.blue {
+      color: #4e8092; }
+  .politician .frame .name {
+    position: absolute;
+    top: 0.1em;
+    text-align: left;
+    left: 4.8em;
+    width: auto;
+    padding: .5em;
+    line-height: 1.1;
+    transition: .3s opacity ease-in;
+    opacity: 0.8;
+    text-decoration: none;
+    border: none;
+    background: none;
+    color: #fff; }
+    .politician .frame .name:hover {
+      opacity: 1;
       border: none;
       background: none;
       color: #fff; }
-      .politician .frame .name:hover {
-        opacity: 1;
-        border: none;
-        background: none;
-        color: #fff; }
-    .politician .frame .portrait {
-      height: 100%;
-      width: 100%;
-      background-size: cover;
-      background-position: center;
-      box-shadow: 0px 1px 0 5px #001F1B; }
-    .politician .frame a {
-      border-color: transparent;
-      background-color: transparent;
-      transition: all .3s ease-in;
-      padding: 0.1em;
-      display: inline-block;
-      margin: 0.3em 0 0;
-      border-radius: 60px;
-      border: 2px solid transparent; }
-      .politician .frame a:hover {
-        border: 2px solid #fff;
-        background-color: rgba(255, 255, 255, 0.3); }
-      .politician .frame a svg {
-        display: block;
-        width: 1.6em;
-        height: 1.6em;
-        margin: 4px;
-        font-size: 0.4em; }
+  .politician .frame .portrait {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0px 1px 0 5px #001F1B; }
+    .politician .frame .portrait ~ a:not(.name) {
+      display: none; }
+      @media only screen and (min-width: 60em) {
+        .politician .frame .portrait ~ a:not(.name) {
+          display: inline-block; } }
+  .politician .frame a {
+    border-color: transparent;
+    background-color: transparent;
+    transition: all .3s ease-in;
+    padding: 0.1em;
+    display: inline-block;
+    margin: 0.3em 0 0;
+    border-radius: 60px;
+    border: 2px solid transparent;
+    font-size: 0.2em; }
+    @media only screen and (min-width: 60em) {
+      .politician .frame a {
+        font-size: 1em; } }
+    .politician .frame a:hover {
+      border: 2px solid #fff;
+      background-color: rgba(255, 255, 255, 0.3); }
+    .politician .frame a svg {
+      display: block;
+      width: 1.6em;
+      height: 1.6em;
+      margin: 4px;
+      font-size: 0.4em; }
 
 .space-background, .stripes-background {
   min-height: 100%;
@@ -267,31 +295,35 @@ button {
   font-size: 3em; }
   .stripes-background h1 {
     font-size: 0.7em;
-    padding: 1em 0; }
+    padding: 1em 0;
+    position: relative; }
     @media only screen and (min-width: 60em) {
       .stripes-background h1 {
         font-size: 1.4em; } }
-  .stripes-background .hero {
-    overflow: hidden;
-    padding: 0 1.5em; }
-    .stripes-background .hero svg {
+    .stripes-background h1 svg {
       height: 1em;
       width: 1em;
-      float: left; }
-      .stripes-background .hero svg:nth-child(1) {
+      position: absolute; }
+      .stripes-background h1 svg:nth-child(1) {
         transform: rotate(30deg);
         height: 0.8em;
         width: 0.8em;
-        float: right; }
-      .stripes-background .hero svg:nth-child(2) {
+        left: 1.8em;
+        top: 0.2em; }
+      .stripes-background h1 svg:nth-child(2) {
         transform: rotate(-60deg);
         height: 2em;
         width: 2em;
-        float: left; }
-      .stripes-background .hero svg:nth-child(3) {
+        left: 0;
+        top: 0.3em; }
+      .stripes-background h1 svg:nth-child(3) {
         transform: rotate(-40deg);
         height: 1.5em;
         width: 1.5em;
-        float: right; }
+        top: 0.8em;
+        right: 0.3em; }
+      .stripes-background h1 svg:nth-child(4) {
+        top: 0.2em;
+        right: 1.5em; }
 
 /*# sourceMappingURL=main.css.map */

@@ -44,37 +44,41 @@ $sub-header-font-size: 1.4em;
 	h1 {
 		font-size: $sub-header-font-size / 2;
 		padding: 1em 0;
+		position: relative;
 
 		@media #{$small-screen} {
 			font-size: $sub-header-font-size;
 		}
-	}
-	.hero {
-		overflow: hidden;
-		padding: 0 1.5em;
 
 		svg {
 			height: 1em;
 			width: 1em;
-			float: left;
+			position: absolute;
 
 			&:nth-child(1) {
 				transform: rotate(30deg);
 				height: 0.8em;
 				width: 0.8em;
-				float: right;
+				left: 1.8em;
+				top: 0.2em;
 			}
 			&:nth-child(2) {
 				transform: rotate(-60deg);
 				height: 2em;
 				width: 2em;
-				float: left;
+				left: 0;
+				top: 0.3em;
 			}
 			&:nth-child(3) {
 				transform: rotate(-40deg);
 				height: 1.5em;
 				width: 1.5em;
-				float: right;
+				top: 0.8em;
+				right: 0.3em;
+			}
+			&:nth-child(4) {
+				top: 0.2em;
+				right: 1.5em;
 			}
 		}
 	}
