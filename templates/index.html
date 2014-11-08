@@ -48,6 +48,14 @@
 		<script type="text/html" id="representatives">
 			<% _.each(representatives, function(rep, biocode, list) { %>
 					<div class="decorative-div">
+						<div class="data-points">
+								<p class="data-point"><%= rep.term_start %> - <%= rep.term_end %></p>
+								<% if (rep.in_office) { %><p class="data-point">Currently In Office</p> <% } %>
+								<p class="data-point"><%= rep.office %></p>
+								<% if (rep.district) { %><p class="data-point">District <%= rep.district%></p> <% } %>
+								<% if (rep.senate_class) { %><p class="data-point">Senate Class <%= rep.senate_class%></p> <% } %>
+								<% if (rep.chamber) { %><p class="data-point">Chamber: <%= rep.chamber%></p> <% } %>
+						</div>
 						<div class="politician">
 							<div class="saturn">
 								<svg version="1.1" class="saturn-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 164.7 166" enable-background="new 0 0 164.7 166" xml:space="preserve">

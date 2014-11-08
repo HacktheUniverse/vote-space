@@ -10,7 +10,8 @@ html, body {
   padding: 0;
   height: 100%;
   width: 100%;
-  zoom: 1; }
+  zoom: 1;
+  text-rendering: geometricPrecision; }
   @media only screen and (min-width: 60em) {
     html, body {
       font-size: 16px; } }
@@ -137,6 +138,18 @@ button {
   background-color: rgba(255, 255, 255, 0.2);
   margin-bottom: 3em;
   padding: 1em; }
+  .decorative-div .data-points {
+    float: right;
+    margin: -0.5em 0; }
+    .decorative-div .data-points .data-point {
+      font-size: 0.4em;
+      color: white;
+      text-align: right;
+      margin: 0 1em;
+      right: 0;
+      clear: none; }
+      .decorative-div .data-points .data-point:nth-child(n+2) {
+        clear: right; }
 
 .politician {
   padding: 1em 2em;

@@ -6,6 +6,21 @@
 	background-color: rgba($white, .2);
 	margin-bottom: 3em;
 	padding: 1em;
+	.data-points {
+		float: right;
+		margin: -0.5em 0;
+		.data-point {
+			font-size: 0.4em;
+			color: white;
+			text-align: right;
+			margin: 0 1em;
+			right: 0;
+			clear: none;
+			&:nth-child(n+2) {
+				clear: right;
+			}
+		}
+	}
 }
 
 .politician {
