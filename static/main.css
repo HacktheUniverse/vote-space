@@ -2,10 +2,12 @@
   font-family: "Prisma";
   src: url("fonts/Prisma.otf") format("opentype");
   src: url("fonts/Prisma.ttf") format("truetype"); }
-body {
+html, body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  height: 100%;
+  width: 100%;
   zoom: 1; }
 
 input {
@@ -44,8 +46,6 @@ button {
     border: 2px solid #001F1B; }
 
 .space-background {
-  height: 100%;
-  width: 100%;
   background: url(images/space.png) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -53,8 +53,6 @@ button {
   background-size: cover; }
 
 .stripes-background {
-  height: 100%;
-  width: 100%;
   background: url(images/stripes.png) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -116,19 +114,44 @@ button {
 
 .decorative-div {
   height: 2em;
-  width: 100%;
   background-color: rgba(255, 255, 255, 0.2);
-  margin-top: 3em; }
+  margin-top: 3em;
+  padding: 1em;
+  display: block; }
+  .decorative-div .saturn-icon {
+    float: left;
+    height: 2em;
+    width: 2em; }
   .decorative-div .frame {
     text-align: center;
-    margin: 0 auto;
-    display: inline-block; }
+    display: block;
+    padding: 1em 2em; }
     .decorative-div .frame li {
       height: 5em;
-      width: 4em;
+      width: 5em;
       display: inline-block;
       background: #fff;
-      margin: -1.3em .3em 0; }
+      margin: -2.5em .5em 0;
+      position: relative;
+      float: left; }
+      .decorative-div .frame li button {
+        border-color: transparent;
+        background-color: transparent;
+        transition: all .3s ease-in;
+        padding: .3em;
+        width: 0;
+        position: relative;
+        bottom: -2.5em; }
+        .decorative-div .frame li button:hover {
+          border-color: #fff;
+          background-color: rgba(255, 255, 255, 0.3); }
+        .decorative-div .frame li button svg {
+          position: absolute;
+          left: 0;
+          height: 0.4em;
+          width: 0.4em;
+          margin: -0.2em .1em;
+          cursor: pointer; }
 
 .space-background .search-bar {
   margin: 0 auto;

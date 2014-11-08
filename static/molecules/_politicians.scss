@@ -1,18 +1,47 @@
 .decorative-div {
 	height: 2em;
-	width: 100%;
 	background-color: rgba($white, .2);
 	margin-top: 3em;
+	padding: 1em;
+	display: block;
+	.saturn-icon {
+		float: left;
+		height: 2em;
+		width: 2em;
+	}
 	.frame {
 		text-align: center;
-		margin: 0 auto;
-		display: inline-block;
+		display: block;
+		padding: 1em 2em;
 		li {
 			height: 5em;
-			width: 4em;
+			width: 5em;
 			display: inline-block;
 			background: $white;
-			margin: -1.3em .3em 0;
+			margin: -2.5em .5em 0;
+			position: relative;
+			float: left;
+			button {
+				border-color: transparent;
+				background-color: transparent;
+				transition: all .3s ease-in;
+				padding: .3em;
+				width: 0;
+				position: relative;
+				bottom: -2.5em;
+				&:hover {
+					border-color: $white;
+					background-color: rgba($white, .3);
+				}
+				svg { 
+					position: absolute;
+					left: 0;
+					height: 0.4em;
+					width: 0.4em;
+					margin: -0.2em .1em;
+					cursor: pointer;
+				}
+			}
 		}
 	}
 }
