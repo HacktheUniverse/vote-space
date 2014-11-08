@@ -1,5 +1,14 @@
 .politicians {
 	@include clearfix;
+	margin-top: -2em;
+	.voters {
+		margin: -1em 0 1.5em;
+		display: inline-block;
+		padding: 0 .5em .5em;
+		color: $white;
+		font-size: 0.8em;
+		text-align: center;
+	}
 }
 
 .decorative-div {
@@ -28,11 +37,13 @@
 	position: relative;
 	.saturn {
 		float: left;
-		top: -1em;
+		top: -1.7em;
+		width: 4em;
+		left: -1em;
 		position: relative;
 		.saturn-icon {
-			height: 2em;
-			width: 2em;
+			height: 3.4em;
+			width: 3.4em;
 		}
 	}
 

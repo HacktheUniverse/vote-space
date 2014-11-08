@@ -128,10 +128,19 @@ button {
     .ameranaut {
       display: block; } }
 
-.politicians:after {
-  content: "";
-  display: table;
-  clear: both; }
+.politicians {
+  margin-top: -2em; }
+  .politicians:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .politicians .voters {
+    margin: -1em 0 1.5em;
+    display: inline-block;
+    padding: 0 .5em .5em;
+    color: #fff;
+    font-size: 0.8em;
+    text-align: center; }
 
 .decorative-div {
   background-color: rgba(255, 255, 255, 0.2);
@@ -155,11 +164,13 @@ button {
   position: relative; }
   .politician .saturn {
     float: left;
-    top: -1em;
+    top: -1.7em;
+    width: 4em;
+    left: -1em;
     position: relative; }
     .politician .saturn .saturn-icon {
-      height: 2em;
-      width: 2em; }
+      height: 3.4em;
+      width: 3.4em; }
   .politician .frame {
     height: 5em;
     width: 5em;
