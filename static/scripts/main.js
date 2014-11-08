@@ -7,5 +7,7 @@ $(function () {
 
   function populateRepresentatives(data) {
     // TODO: populate reps
+	var $repTemplate = $('#representatives').html();
+	_.template($repTemplate, {representatives: data});
   }
 });
