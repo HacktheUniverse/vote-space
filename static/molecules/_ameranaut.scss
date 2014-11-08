@@ -1,31 +1,32 @@
 @mixin keyframes($animation-name) {
-  @-webkit-keyframes #{$animation-name} {
-    @content;
-  }
-  @-moz-keyframes #{$animation-name} {
-    @content;
-  }
-  @keyframes #{$animation-name} {
-    @content;
-  }
+	@-webkit-keyframes #{$animation-name} {
+		@content;
+	}
+	@-moz-keyframes #{$animation-name} {
+		@content;
+	}
+	@keyframes #{$animation-name} {
+		@content;
+	}
 }
 
 @mixin animation($str) {
-  -webkit-animation: #{$str};
+	-webkit-animation: #{$str};
 }
 
 @include keyframes(spin) {
-  0% {transform: rotate(0deg)}
-  100% {transform: rotate(-360deg)}
+	0% {transform: rotate(0deg)}
+	100% {transform: rotate(-360deg)}
 }
 
 .ameranaut {
 	background-image: url("images/amernaut.png");
 	height: 230px;
 	width: 195px;
-	float: right;
-	margin: 2em 4em;
-  	@include animation(spin 20s ease-in-out);
-  	animation-iteration-count: infinite;
-  	-webkit-animation-iteration-count: infinite;
+	position: absolute;
+	right: 6em;
+	bottom: 2em;
+	@include animation(spin 20s ease-in-out);
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
 }
