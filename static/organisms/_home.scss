@@ -23,28 +23,15 @@ $header-font-size: 6em;
 	margin-bottom: -1 * $header-font-size;
 	text-align: center;
 
-	.search-bar {
-		display: inline-block;
-		position: relative;
-
-		svg {
-			height: 3em;
-			width: 3em;
-			position: absolute;
-			right: 1em;
-			top: 1em;
-			padding: 0.1em;
-		}
-		button {
-			margin: 1em auto;
-			display: block;
-		}
-	}
 	h1 {
-		font-size: $header-font-size;
+		font-size: $header-font-size / 2;
 		margin: 0 auto 1em;
 		word-spacing: 7px;
 		line-height: 1;
 		max-width: 15em;
+
+		@media #{$medium-screen} {
+			font-size: $header-font-size;
+		}
 	}
 }

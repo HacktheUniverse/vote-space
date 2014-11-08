@@ -20,6 +20,7 @@
 }
 
 .ameranaut {
+	display: none;
 	background-image: url("images/amernaut.png");
 	height: 230px;
 	width: 195px;
@@ -29,4 +30,8 @@
 	@include animation(spin 20s ease-in-out);
 	animation-iteration-count: infinite;
 	-webkit-animation-iteration-count: infinite;
+
+	@media #{$medium-screen} {
+		display: block;
+	}
 }
