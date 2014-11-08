@@ -1,14 +1,17 @@
 $(function () {
-  $('#search').on('click', fetchRepresentatives);
+	$('#search').on('click', fetchRepresentatives);
+	$('#zip').on('keypress', function (event) {
+    if (event.keyCode == 13) {
+      fetchRepresentatives();
+    }
+  });
 
-  function fetchRepresentatives(event) {
-  	var $val = $('#zip').val();
-    $.getJSON('/get_reps/' + $val, populateRepresentatives);
-  }
+	function fetchRepresentatives() {
+		$.getJSON('/get_reps/' + $('#zip').val(), populateRepresentatives);
+	}
 
-  function populateRepresentatives(data) {
-	var $repTemplate = $('#representatives').html();
-	var repRender = _.template($repTemplate, {variable: 'representatives'})(data);
-	$('.view-two').append(repRender);
-  }
+	function populateRepresentatives(data) {
+  	var repRender = _.template($('#representatives').html(), { variable: 'representatives' })(data);
+  	$('.view-two').append(repRender);
+	}
 });
