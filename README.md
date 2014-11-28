@@ -6,3 +6,5 @@ We aggregate live data from [Sunlight Labs' Congress API](https://sunlightlabs.g
 
 Please view our project in the latest version of Chrome. 
 Our category is WILD CARD (Civil Responsibility)
+
+Demo from Hack the Universe presentation: http://youtu.be/a-ASUkoMkmg?list=UUIuhq9LTleLC-GMdAOvvZcg
